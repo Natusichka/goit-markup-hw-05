@@ -60,7 +60,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary">Замовити послугу</button>
+          <button data-modal-open type="button" class="button primary">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Особливості -->
@@ -129,28 +131,37 @@
           <h2 class="our-work-title">Чим ми займаємося</h2>
           <ul class="our-work list">
             <li class="our-work-card">
-              <img
-                src="./images/box1.jpg"
-                alt="Створення макету сайта"
-                width="370"
-                height="294"
-              />
+              <div class="our-work-card-wrapper">
+                <img
+                  src="./images/box1.jpg"
+                  alt="Створення макету сайта"
+                  width="370"
+                  height="294"
+                />
+                <p class="card-overlay">Десктопні додатки</p>
+              </div>
             </li>
             <li class="our-work-card">
-              <img
-                src="./images/box2.jpg"
-                alt="Тестування мобільної версії"
-                width="370"
-                height="294"
-              />
+              <div class="our-work-card-wrapper">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Тестування мобільної версії"
+                  width="370"
+                  height="294"
+                />
+                <p class="card-overlay">Мобільні додатки</p>
+              </div>
             </li>
             <li class="our-work-card">
-              <img
-                src="./images/box3.jpg"
-                alt="Обрання кольору"
-                width="370"
-                height="294"
-              />
+              <div class="our-work-card-wrapper">
+                <img
+                  src="./images/box3.jpg"
+                  alt="Обрання кольору"
+                  width="370"
+                  height="294"
+                />
+                <p class="card-overlay">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -545,5 +556,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
