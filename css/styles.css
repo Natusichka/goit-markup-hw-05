@@ -37,7 +37,6 @@ ol {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 
@@ -177,6 +176,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 
   color: var(--primary-text-color);
   fill: currentColor;
@@ -286,30 +287,6 @@ img {
   flex-direction: row;
   gap: 30px;
 }
-/* .portfolio-list-img-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 64px 24px;
-
-  font-size: 18px;
-  line-height: 1.56;
-  color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
-  overflow: auto;
-  transform: translateY(100%);
-  transition: transform var(--transition-dur-and-func);
-}
-.portfolio-card-info:hover .overlay,
-.portfolio-card-info:focus .overlay {
-  transform: translateY(0%);
-} */
 .our-work-card-wrapper {
   position: relative;
 }
@@ -385,7 +362,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
-  transition: background-color var(--title-text-color);
+  transition: background-color var(--transition-dur-and-func);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -456,6 +433,8 @@ img {
   display: flex;
   border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
+}
+.portfolio-card-info {
   transition: box-shadow var(--transition-dur-and-func);
 }
 .portfolio-card-info:hover,
@@ -610,7 +589,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.03, 0.99, 0.87, 0.75),
-  visibility 500ms cubic-bezier(0.03, 0.99, 0.87, 0.75);
+    visibility 500ms cubic-bezier(0.03, 0.99, 0.87, 0.75);
 }
 .backdrop.is-hidden {
   visibility: hidden;
